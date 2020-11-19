@@ -8,6 +8,20 @@ html{
 h1, h2, h3, h4{
   font-family: 'Bitter', serif;
 }
+img, iframe{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+iframe{
+  width: 640px;
+  height: 360px;
+}
+div{
+  margin: auto;
+}
 
 .divcontainer{
   background: #F8CBD1;
@@ -17,6 +31,8 @@ h1, h2, h3, h4{
   clear: both;
   display: table;
 }
+
+
 [class*="col-"] {
   float: left;
   padding: 15px;
