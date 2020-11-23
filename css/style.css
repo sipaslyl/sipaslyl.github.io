@@ -5,6 +5,10 @@ html{
   background: #F6F2EC;
   font-family: 'Raleway', sans-serif;
 }
+body{
+  margin:0px;
+  padding:0px;
+}
 h1, h2, h3, h4{
   font-family: 'Bitter', serif;
 }
@@ -19,25 +23,49 @@ iframe{
   width: 640px;
   height: 360px;
 }
-div{
-  margin: auto;
+a{
+  text-decoration: none;
+  color:blueviolet;
+  font-weight:bolder;
+  font-size: 18px;
 }
 
-.divcontainer{
+
+.pinkbg{
   background: #F8CBD1;
+}
+header{
+  padding: 20px;
+  height:100%;
+  
 }
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.linkedin-button{
+  float:none;
+  text-align: center;
+  background: pink;
+  padding: 10px;
+  border-radius: 50px;
+}
+
 
 
 [class*="col-"] {
   float: left;
   padding: 15px;
   width: 100%;
-  border: 1px solid red;
+  //border: 1px solid red;
+  
 }
 @media only screen and (min-width: 600px) {
   /* For tablets: */
