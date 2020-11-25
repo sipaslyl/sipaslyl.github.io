@@ -2,12 +2,21 @@
   box-sizing: border-box;
 }
 html{
+  
   background: #F6F2EC;
   font-family: 'Raleway', sans-serif;
 }
 body{
+  background-image: url("/images/so-white.png");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: cover;
   margin:0px;
   padding:0px;
+}
+header{
+  padding: 20px;
+  height:100%;
 }
 h1, h2, h3, h4{
   font-family: 'Bitter', serif;
@@ -29,15 +38,25 @@ a{
   font-weight:bolder;
   font-size: 18px;
 }
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: left;
+}
+li a{
+  display: block;
+  text-align: center;
+  padding: 0px 10px;
+  text-decoration: none;
+}
 
 
 .pinkbg{
   background: #F8CBD1;
-}
-header{
-  padding: 20px;
-  height:100%;
-  
 }
 .row::after {
   content: "";
@@ -57,14 +76,24 @@ header{
   padding: 10px;
   border-radius: 50px;
 }
-
+.headerbg{
+  background-image: url("/images/pink-snow.png");
+  background-repeat: repeat;
+  background-size: contain;
+}
+.opacityhover{
+  opacity: 0.5;
+}
+.opacityhover:hover {
+  opacity: 1.0;
+}
 
 
 [class*="col-"] {
   float: left;
   padding: 15px;
   width: 100%;
-  //border: 1px solid red;
+  /*border: 1px solid red;*/
   
 }
 @media only screen and (min-width: 600px) {
