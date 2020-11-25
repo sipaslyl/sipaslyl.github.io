@@ -7,10 +7,8 @@ html{
   font-family: 'Raleway', sans-serif;
 }
 body{
-  background-image: url("/images/so-white.png");
-  background-attachment: fixed;
+  background-image: url("/images/spring.png");
   background-repeat: repeat;
-  background-size: cover;
   margin:0px;
   padding:0px;
 }
@@ -20,6 +18,10 @@ header{
 }
 h1, h2, h3, h4{
   font-family: 'Bitter', serif;
+}
+p{
+  text-indent: 30px;
+  line-height: 1.5;
 }
 img, iframe{
   max-width: 100%;
@@ -38,19 +40,9 @@ a{
   font-weight:bolder;
   font-size: 18px;
 }
-ul {
-  display: flex;
-  align-items: flex-end;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
 li {
   float: left;
 }
-
 li a {
   display: block;
   color: white;
@@ -58,12 +50,22 @@ li a {
   padding: 20px 15px;
   text-decoration: none;
 }
-
 a:hover {
   color:blueviolet;
 }
 
 
+.navigation {
+  display: flex;
+  align-items: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.resume-format{
+  line-height: 1.5;
+}
 .pinkbg{
   background: #ffc1b1;
 }
@@ -92,6 +94,7 @@ a:hover {
   color:#ffc1b1;
   padding: 10px;
   border-radius: 50px;
+  line-height: 1;
 }.reverse-button:hover {
   color:blueviolet;
 }
