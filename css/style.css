@@ -25,7 +25,7 @@ p{
 }
 img, iframe{
   max-width: 100%;
-  height: auto;
+  max-height: 1005;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -113,6 +113,9 @@ a:hover {
   margin: 0;
   padding: 0;
 }
+.roundphoto img{
+  border-radius: 50%;
+}
 
 
 [class*="col-"] {
@@ -125,15 +128,21 @@ a:hover {
 @media only screen and (max-width:768px){
   li {
   float: left;
-}
+  }
   ul{
   flex-direction: column;
-}
+  }
   li a {
   padding:20px 0px;
+  }
 }
+@media only screen and (max-width: 600px) {
+  .roundphoto {
+    max-width:300px;
+  }
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) 
+{
   /* For tablets: */
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
